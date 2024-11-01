@@ -1,0 +1,134 @@
+  /*
+    Flaticon icon font: Flaticon
+    Creation date: 23/04/2019 10:04
+    */
+
+@font-face {
+  font-family: "WPBWWAICONS";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "WPBWWAICONS";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="wpbwwaicons-"]:before, [class*=" wpbwwaicons-"]:before,
+[class^="wpbwwaicons-"]:after, [class*=" wpbwwaicons-"]:after {   
+  font-family: WPBWWAICONS;
+  display: inline-block;
+}
+
+.wpbwwaicons-plus-o:before { content: "\f100"; }
+.wpbwwaicons-plus:before { content: "\f101"; }
+.wpbwwaicons-minus-o:before { content: "\f102"; }
+.wpbwwaicons-minus:before { content: "\f103"; }
+
+.wpb-accordion-widget-title, .wpb-accordion-widget-content {
+  padding: 15px 10px;
+}
+
+.wpb-accordion-widget-title {
+  cursor: pointer;
+  margin: 0!important;
+  overflow: hidden;
+  padding-right: 50px;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: normal;
+}
+
+.wpb-accordion-widget-title::after {
+  font-family: WPBWWAICONS;
+  position: absolute;
+  right: 20px;
+  margin-top: -6px;
+  top: 50%;
+  -webkit-transition: border .2s ease;
+  transition: border .2s ease;
+}
+
+.wpb-accordion-widget-content {
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+/**
+ * Style 1
+ */
+
+.wpb-widgets-accordion-style-1 .wpb-accordion-widget-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: unset;
+  color: #000;
+}
+.wpb-widgets-accordion-style-1 .wpb-accordion-widget-title::after {
+  content: "\f100";
+}
+.wpb-widgets-accordion-style-1 .wpb-accordion-widget.is-open > .wpb-accordion-widget-title::after {
+  content: "\f102";
+}
+
+.wpb-widgets-accordion-style-1 .wpb-accordion-widget {
+  border-bottom: 1px solid rgba(232, 232, 232, 0.5);
+  -webkit-transition: border .2s ease;
+  transition: border .2s ease;
+}
+
+.wpb-widgets-accordion-style-1 .wpb-accordion-widget:first-child {
+  margin-top: 0;
+  border-top: 0;
+}
+
+/**
+ * Style 2
+ */
+
+.wpb-widgets-accordion-style-2 .wpb-accordion-widget-title {
+  font-size: 14px;
+  color: #333;
+  font-weight: normal;
+  background: #fff; 
+}
+.wpb-widgets-accordion-style-2 .wpb-accordion-widget-title::after {
+  content: "\f101";
+  color: #000;
+  font-size: 12px;
+}
+.wpb-widgets-accordion-style-2 .wpb-accordion-widget.is-open > .wpb-accordion-widget-title::after {
+  content: "\f103";
+}
+.wpb-widgets-accordion-style-2 .wpb-accordion-widget {
+  border: 1px solid #c7c7c7;
+  -webkit-transition: border .2s ease;
+  transition: border .2s ease;
+  margin-top: -1px;
+}
+.wpb-widgets-accordion-style-2 .wpb-accordion-widget-title, .wpb-widgets-accordion-style-2 .wpb-accordion-widget-content {
+  padding: 15px;
+}
+
+
+/**
+ * RTL
+ */
+
+.rtl .wpb-accordion-widget-title {
+  padding-left: 50px;
+  padding-right: 10px;
+}
+.rtl .wpb-accordion-widget-title::after {
+  right: unset;
+  left: 20px;
+}
